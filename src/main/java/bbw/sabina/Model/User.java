@@ -5,14 +5,13 @@ public class User {
     private int id;
     private String username;
     private String password;
-    private boolean role;    // true = Admin, false = normal User
+    private boolean isAdmin;    // true = Admin, false = normal User
 }
-
-public User(int id, String username, String password, String role ){
-    this.id = id;
+//Konstruktor
+public User(String username, String password, boolean role ){
     this.username = username;
     this.password = password;
-    this.role = role;
+    this.isAdmin = isAdmin;
 }
 
 // Getter
@@ -20,16 +19,16 @@ public int getId() {
     return id;
 }
 
-public String getusername {
+public String getUsername() {
     return username;
 }
 
-public String getpassword {
+public String getPassword() {
     return password;
 }
 
-public boolean getRole {
-    return role;
+public boolean getisAdmin() {
+    return isAdmin;
 }
 
 // Setter
